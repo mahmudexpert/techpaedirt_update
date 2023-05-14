@@ -1,0 +1,267 @@
+/*-------------------------------------- common css */
+
+/* for font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*-------------------------------------- top nav css */
+.brand_name h2 {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .72)
+}
+
+.top_togethar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right_side_icon i {
+    margin-right: 10px;
+    padding: 8px 8px;
+    color: #2d3748;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+.right_side_icon i:hover {
+    background: #045ab3;
+    color:#fff;
+   
+
+}
+
+/*-------------------------------------- hero_area css */
+/* background image */
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.419)), url(../img/Texas-Prairie-1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px 0px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+
+.hero_content h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #f0ed6a;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .72)
+}
+
+.hero_content h4 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .72);
+    font-size: 21px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.hero_content p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero_content i {
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+
+.hero_img {
+    text-align: right;
+}
+
+.hero_img img {
+    width: 95%;
+
+}
+
+/*--------------------------------------------------------- offer section */
+h1.text-center.pb-4 {
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+}
+.offer{
+    padding:120px 0px;
+}
+
+.offer_content {
+    padding: 25px 20px;
+    margin: 10px 10px 10px 0px;
+
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.offer_content p{
+    color: #ffffff;
+}
+
+.offer_content h1 {
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*-------------------------------------------------------------- review css */
+
+.profile_bio_content{
+    text-align: right;
+}
+.review_content p {
+    color: #ffffff;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile_bio {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+}
+
+.profile_bio_content p {
+    font-style: normal;
+}
+
+.profile_bio_content h3 {
+    font-weight: 600;
+}
+
+
+/*------------------------------------------------------------------- brand about */
+
+.brand_content h2 {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+
+.brand_content {
+    padding-top:70px;
+}
+
+.brand_content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin:30px 0px;
+}
+
+.bttn a {
+    padding: 15px 30px;
+    border: 2px solid #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    background: transparent;
+    font-weight: 700;
+    color: rgba(230, 243, 7, .99);
+    transition: 0.3s;
+}
+
+.bttn a:hover {
+    color: rgba(0, 0, 0, 0.99);
+    transition: 0.3s;
+    background: #ffffff;
+}
+
+/*-------------------------------------------------------------------- contact css */
+.address_togethar{
+    display: flex;
+    justify-content: space-between;
+}
+.contact_content{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+}
+.contact_content h3{
+    font-weight: 600;
+}
+
+
+footer{
+    color:#fff;
+}
+.text-align{
+    text-align: right;
+}
+.copyright h6{
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+@media only screen and (max-width: 667px) {
+    .hero_img {
+        text-align: left;
+    }
+
+    .hero_img img {
+        width: 85%;
+
+    }
+    .hero_content h2 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .text-align{
+        text-align: left;
+    }
+    section{
+        
+    }
+    .brand_content {
+        padding-top:10px;
+    }
+    .contact_buttn.mt-4 {
+        text-align: left;
+    }
+    .offer{
+        padding:80px 0px;
+    }
+    .profile_bio {
+        flex-direction: column;
+        align-items: self-start;
+    }
+}
+
+@media only screen and (max-width: 1051px) {
+    .address_togethar{
+        flex-direction: column;
+    }  
+}
